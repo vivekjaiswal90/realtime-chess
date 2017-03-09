@@ -1,0 +1,303 @@
+#fb-link  {
+	top: 40px;
+	position:absolute;
+	height:7px;
+	width:160px;
+	left: 1210px;
+	background: url('images/fb.png') no-repeat;
+	background-position: 25px 0px;
+	padding-bottom:22px;
+	
+}
+
+#twitter-link  {
+	top: 70px;
+	position:absolute;
+	height:27px;
+	width:160px;
+	left: 1210px;
+	background: url('images/twitter.png') no-repeat;
+	background-position: 25px 0px;
+	padding:inherit;
+}
+
+#developers-link  {
+	top: 98px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1210px;
+	background: url('images/developers.png') no-repeat;
+	background-position: 25px 0px;
+	padding:inherit;
+}
+
+#pawn  {
+	top: 300px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 180px;
+	background: url('images/pawn.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#king{
+	top: 100px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 180px;
+	background: url('images/king.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#queen{
+	top: 140px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 180px;
+	background: url('images/queen.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#bishop{
+	top: 180px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 180px;
+	background: url('images/bishop.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#knight{
+	top: 220px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 180px;
+	background: url('images/knight.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#rook{
+	top: 260px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 180px;
+	background: url('images/rook.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+#rook-w{
+	top: 260px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/rookw.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#king-w{
+	top: 100px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/kingw.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#queen-w{
+	top: 140px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/queenw.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#bishop-w{
+	top: 180px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/bishopw.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#knight-w{
+	top: 220px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/knightw.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#pawn-w  {
+	top: 300px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/pawnw.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#score-text  {
+	top: 50px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/scoretext.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#score-text1  {
+	top: 70px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/scoretext.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#score-text2  {
+	top: 90px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1000px;
+	background: url('images/scoretext.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+}
+
+#searchbox-text  {
+	top: 50px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 100px;
+	background: url('images/scoretext.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+}
+
+#logout{
+	top: 10px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 1250px;
+	background: url('images/logout.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+}
+
+#image{
+	top: 200px;
+	position:absolute;
+	height:400px;
+	width:400px;
+	left: 490px;
+	background: url('images/Lewis_Chessmen_Overview.png') no-repeat;
+	background-position: 25px 0px;
+	opacity: 0.7;
+	padding:25px;
+	
+}
+#single{
+	top: 150px;
+	position:absolute;
+	height:200px;
+	width:300px;
+	left: 350px;
+	background: url('images/single1.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+	
+}
+
+#multi{
+	top: 300px;
+	position:absolute;
+	height:200px;
+	width:300px;
+	left: 650px;
+	background: url('images/multi1.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+	
+}
+#easy  {
+	top: 200px;
+	position:absolute;
+	height:28px;
+	width:400px;
+	left: 400px;
+	background: url('images/easy.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+}
+
+#medium  {
+	top: 400px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 200px;
+	background: url('images/medium.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+}
+
+#hard {
+	top: 600px;
+	position:absolute;
+	height:28px;
+	width:160px;
+	left: 200px;
+	background: url('images/hard.png') no-repeat;
+	background-position: 25px 0px;
+	padding:25px;
+}
+

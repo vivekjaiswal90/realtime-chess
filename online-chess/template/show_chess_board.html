@@ -1,0 +1,37 @@
+<script>
+function reloadIframe()
+{
+	document.getElementById('iframe1').src=src="occ_mod/board.php?member=<?php echo $username;?>&opponent=<?php echo $opponent;?>&wp=<?php echo $_GET['white'];?>&host=<?php echo $_GET['host'];?>&gid=<?php echo $_GET['gid'];?>";
+}
+setInterval("reloadIframe();",10000)
+</script>
+
+<style type="text/css">
+body {
+	background-image: url('./chess.jpg');
+}
+body,td,th {
+	color: #CCC;
+}
+</style>
+<div style="text-align:center"><a href="member_area.php" style="color:yellow">Member Home</a> You are <?php echo $username;?></div>
+<br>
+<div style="text-align:center">
+<table align="center">
+ <tr><td width="406"><b>Chess Board</b></td><td width="50"></td></tr>
+ <tr>
+  <td valign="top">
+ <iframe id="iframe1" style="width:415px;height:465px" scrolling="no" frameborder="0" src="occ_mod/board.php?member=<?php echo $username;?>&opponent=<?php echo $opponent;?>&wp=<?php echo $_GET['white'];?>&host=<?php echo $_GET['host'];?>&gid=<?php echo $_GET['gid'];?>"></iframe></td>
+  <td width="50"></td>
+ </tr>
+</table>
+</div>
+<br>
+
+<br>
+
+<div style="text-align:center">Your Opponent: <?php echo $opponent;?>. </div>
+<div style="text-align:center"> Rating: Win: <?php echo $oppWin;?> | Loss: <?php echo $oppLoss;?> | Draw: <?php echo $oppDraw;?></div>
+
+<br>
+

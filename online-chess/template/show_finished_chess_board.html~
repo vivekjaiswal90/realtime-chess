@@ -1,0 +1,25 @@
+<style type="text/css">
+body {
+	background-image: url('./chess.jpg');
+}
+body,td,th {
+	color: #CCC;
+}
+</style>
+<div style="text-align:center"><a href="member_area.php">Member Home</a> You are <?php echo $username;?></div>
+<br>
+
+<table align="center">
+ <tr><td width="406"><b>History Moves Replay</b></td><td width="50"></td><td width="406"><b>PGN String</b></td></tr>
+ <tr>
+  <td valign="top">
+  <iframe style="width:415px;height:465px" scrolling="no" frameborder="0" src="occ_mod/board.php?member=<?php echo $username;?>&browse=1&rotate=1&gid=<?php echo $_GET['gid'];?>"></iframe>
+  </td>
+  <td width="50"></td>
+  <td valign="top" width="415"><?php echo $pgnHeader;?><br><br><?php echo $pgnStr;?></td>
+ </tr>
+</table>
+
+<br>
+
+<div style="text-align:center">Your Opponent: <?php echo $opponent;?>. Rating: Win: <?php echo $oppWin;?> | Loss: <?php echo $oppLoss;?> | Draw: <?php echo $oppDraw;?></div>

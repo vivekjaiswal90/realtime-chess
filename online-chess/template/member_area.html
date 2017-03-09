@@ -1,0 +1,42 @@
+<style type="text/css">
+body {
+	background-image: url('./chess.jpg');
+}
+body,td,th {
+	color: #CCC;
+}
+</style>
+<div style="text-align:center">
+<div style="text-align:center"><b><?php echo $displayStatusMssg;?></b></div>
+<br>
+<form name="createChessForm" method="post" action="./member_area.php?<?php echo $_SERVER['QUERY_STRING'];?>">
+
+<table width="300" align="center">
+<tr><td><b>Create Chess Table</b></td></tr>
+<tr><td>Choose Black or White side</td></tr>
+<tr><td align="left"><select name="color" style="width:100px"><option value="0">RANDOM</option><option value="1">WHITE</option><option value="2">BLACK</option></select></td></tr>
+<tr><td align="center"><input name="actCreateChessTbl" type="submit" class="button" value="Create Chess Table!"></td></tr>
+</table>
+
+</form>
+
+<br>
+
+<hr>
+<div style="text-align:center">Your Ongoing Games</div>
+<br>
+<table align="center" width="90%">
+<tr><td>Opponents</td><td>Hosted By</td><td>Action</td></tr>
+<?php include('show_ongoing_chess_games.inc.php');?>
+</table>
+
+<hr>
+
+<br>
+
+<div style="text-align:center">Join Chess Game Here</div>
+<br>
+<table align="center" width="90%">
+<tr><td>Host</td><td>Color</td><td>Action</td></tr>
+<?php include('show_chess_tables.inc.php');?>
+</table>

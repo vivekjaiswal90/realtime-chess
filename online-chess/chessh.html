@@ -1,0 +1,67 @@
+<!-- DOCTYPE html--> 
+<html> 
+  <head> 
+    <title>Online Chess</title> 
+    <script type="text/javascript" src="jsh/jquery-1.8.2.min.js"></script> 
+    <script type="text/javascript" src="jsh/jquery-ui-1.8.24.custom.min.js"></script> 
+    <script type="text/javascript" src="jsh/chess1.js"></script>
+	<script type="text/javascript" src="jsh/boardui.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        g_timeout = 1000;
+	        UINewGame();
+	    });
+    </script> 
+      <style type="text/css">
+      		
+      		body {
+	background-image: url('./chess.jpg');
+}
+body,td,th {
+	color: #CCC;
+}
+
+          #FenTextBox {
+              width: 400px;
+          }
+          #TimePerMove {
+			  font-family: 'Calibri';
+			  width: 50px;
+          }
+		  #board table{border:8px solid #789;}
+          .no-highlight {
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+          }
+          .sprite-bishop_black{ background-image:url('./images/bb.png'); width: 50px; height: 50px; } 
+          .sprite-bishop_white{ background-image:url('./images/wb.png'); width: 50px; height: 50px; } 
+          .sprite-king_black{ background-image:url('./images/bk.png'); width: 50px; height: 50px; }
+          .sprite-king_white{ background-image:url('./images/wk.png'); width: 50px; height: 50px; } 
+          .sprite-knight_black{ background-image:url('./images/bn.png'); width: 50px; height: 50px; } 
+          .sprite-knight_white{ background-image:url('./images/wn.png'); width: 50px; height: 50px; } 
+          .sprite-pawn_black{ background-image:url('./images/bp.png'); width: 50px; height: 50px; }
+          .sprite-pawn_white{ background-image:url('./images/wp.png'); width: 50px; height: 50px; } 
+          .sprite-queen_black{ background-image:url('./images/bq.png'); width: 50px; height: 50px; }
+          .sprite-queen_white{ background-image:url('./images/wq.png'); width: 50px; height: 50px; }
+          .sprite-rook_black{ background-image:url('./images/br.png'); width: 50px; height: 50px; } 
+          .sprite-rook_white{ background-image:url('./images/wr.png'); width: 50px; height: 50px; }
+      </style>
+  </head> 
+  <body bgcolor="#7EB6FF"> 
+    <div align="center">
+        <div id="op" style="margin-top:20px;">
+            <a href="javascript:UINewGame()" style="text-decoration: none; font-size: 17pt; color: white; font-family: 'Calibri' ">New game</a>
+        </div>
+		<div>&nbsp;</div>
+		<div id="undo">
+			<a href="javascript:UIUndoMove()" style="text-decoration: none; font-size: 12pt; color: white; font-family: 'Calibri' ">Time per move: <input id="TimePerMove" value="3000" onchange="javascript:UIChangeTimePerMove()" />ms&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Undo Last Move</a>
+		</div>
+        <div style="margin-top:15px;">
+        <div id='board'></div> 
+        <span id='output'></span><br/> 
+	    
+        <input type="hidden" id='FenTextBox' onchange="javascript:UIChangeFEN()"/>
+        </div>
+     
+     </div> 
+  </body> 
+</html> 

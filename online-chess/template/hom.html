@@ -1,0 +1,58 @@
+<html>
+<head>
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" href="stylesheets/reset.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/extra.css">
+
+
+	<style>
+	body {background-image:url('./chess.jpg');}
+	h1{font-size:34px; color:#CCC; font-family:Monda-Regular;}
+	</style>
+	
+<title>Multiplayer Chess</title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Language" content="en">
+</head>
+
+<body>
+<div id="banner">ONLINE CHESS</div>
+<h1 align="center"><br>MULTIPLAYER MODE</h1>
+<div style="text-align:center">
+  <div align="center"><b><?php echo $displayStatusMssg;?></b></div>
+</div>
+  <p>&nbsp;</p>
+</div>
+ 
+<div align="center">
+ <table align="center" width="60%">
+ <tr>
+ <td height="115"><form name="loginForm" action="./login.php" method="post">
+
+<table align="center" width="324">
+<tr><td width="316" align="left"><div align="center"><b>Enter your username to play</b></div></td></tr>
+<tr><td></td>&nbsp;</tr>
+<tr><td align="center"><div align="center">
+  <input type="text" placeholder="Username" name="username">
+</div></td></tr>
+<tr><td></td>&nbsp;</tr>
+<tr><td></td>&nbsp;</tr>
+<tr><td align="right"><div align="center">
+  <input type="submit" value="ENTER THE ARENA">
+</div></td></tr>
+</table>
+
+</div>
+
+<div align="center"></div>
+  </form>
+ </td>
+  <td><div align="center"></div>
+  </td>
+ </tr>
+</table>
+<br>
+</body></html>
